@@ -1,7 +1,7 @@
 var express = require('express'),
     path = require('path'),
     router = express.Router()
-    blog = require('./routes/blogHandler')
+    blog = require('./routes/blogController.js')
 
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'))
