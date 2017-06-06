@@ -9,97 +9,110 @@
       integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
       crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="/css/reset.css">
     <style type="text/css">
-    body{
-      background-color: #4da6ff;
-      overflow: hidden;
-    }
-    .mobileHide{
-      display: none;
-    }
-    #main{
-      margin-top: -2vh;
-    }
-    #connect{
-      z-index: 1;
-      position: relative;
-      width: 49vw;
-      height: 48vh;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 49vh;
-    }
-    #connect:hover{
-      background-color: #66b3ff;
-    }
-    #code{
-      z-index: 1;
-      position: relative;
-      width: 49vw;
-      height: 48vh;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 49vh;
-    }
-    #code:hover{
-      background-color: #66b3ff;
-    }
-    #connect, #code{
-      display: inline-block;
-    }
-    #blog{
-      z-index: 1;
-      position: relative;
-      width: 49vw;
-      height: 50vh;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 50vh;
-    }
-    #blog:hover{
-      background-color: #66b3ff;
-    }
-    #resume{
-      z-index: 1;
-      position: relative;
-      width: 49vw;
-      height: 50vh;
-      text-align: center;
-      vertical-align: middle;
-      line-height: 50vh;
-    }
-    #resume:hover{
-      background-color: #66b3ff;
-    }
-    #blog, #resume{
-      display: inline-block;
-    }
-    #profile{
-      z-index: 2;
-      position: absolute;
-      margin-top: -15vh;
-      margin-left: 39vw;
-      width: 340;
-      length: 320;
-    }
-    h1{
-      color: white;
-    }
-    a{
-      color: white;
-      text-decoration: none;
-    }
+      body{
+        line-height: 1;
+        background-color: #4da6ff;
+        overflow: hidden;
+      }
+      .mobileHide{
+        display: none;
+      }
+      .mobileShow{
+        display: inline;
+      }
+      #main{
+        margin-top: -2vh;
+      }
+      #connect{
+        z-index: 1;
+        position: relative;
+        width: 49vw;
+        height: 48vh;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 49vh;
+      }
+      #connect:hover{
+        background-color: #66b3ff;
+      }
+      #code{
+        z-index: 1;
+        position: relative;
+        width: 49vw;
+        height: 48vh;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 49vh;
+      }
+      #code:hover{
+        background-color: #66b3ff;
+      }
+      #connect, #code{
+        display: inline-block;
+      }
+      #blog{
+        z-index: 1;
+        position: relative;
+        width: 49vw;
+        height: 50vh;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50vh;
+      }
+      #blog:hover{
+        background-color: #66b3ff;
+      }
+      #resume{
+        z-index: 1;
+        position: relative;
+        width: 49vw;
+        height: 50vh;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 50vh;
+      }
+      #resume:hover{
+        background-color: #66b3ff;
+      }
+      #blog, #resume{
+        display: inline-block;
+      }
+      #profile{
+        z-index: 2;
+        position: absolute;
+        margin-top: -15vh;
+        margin-left: 39vw;
+        vertical-align: middle;
+
+      }
+      h1{
+        color: white;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      </style>
+      <style type="text/css">
+         .mobileHide { display: inline;}
+         /* Smartphone Portrait and Landscape */
+         @media only screen
+          and (min-device-width : 320px)
+          and (max-device-width : 480px){  .mobileHide { display: none;}}
+       </style>
+       <style type="text/css">
+       .mobileShow { display: none;}
+       /* Smartphone Portrait and Landscape */
+       @media only screen
+       and (min-device-width : 320px)
+       and (max-device-width : 480px){ .mobileShow { display: inline;}}
     </style>
-    <style type="text/css">
-   .mobileHide { display: inline;}
-   /* Smartphone Portrait and Landscape */
-   @media only screen
-    and (min-device-width : 320px)
-    and (max-device-width : 480px){  .mobileHide { display: none;}}
-   </style>
   </head>
   <body>
-    <h1 style="padding-left: 39.5vw; font-size: 3vw">Will Robinson</h1>
+    <h1 style="padding-left: 39.5vw; font-size: 3vw; position:relative;">Will Robinson</h1>
+    <img class="mobileShow" src="/profile-pic.png" alt="profile" width="323vw" height="300vh" style="position: absolute;">
     <div class='container' id='main'>
       <div id='connect'>
         <a id="connect-link" href='#'><h1>connect</h1></a>
@@ -121,9 +134,9 @@
         <img class="mobileHide" src="/arrow-name1.png" alt="arrow" width="240" height="205" style="position: absolute; padding-left: 2vw; margin-top: -29vh;">
         <img class="mobileHide" src="/white-arrow-v2.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 15vw; margin-top: -7vh;">
         <img class="mobileHide" src="/arrow-connect1.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -5vw; margin-top: -7vh;">
-        <img src="/profile-pic.png" alt="profile" width="323" height="300">
-        <img class="mobileHide" src="/arrow-blog.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -6vw;">
-        <img class="mobileHide" src="/arrow-resume.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 16vw;">
+        <img class="mobileHide" src="/profile-pic.png" alt="profile" width="323vw" height="300vh" style="position: absolute;">
+        <img class="mobileHide" src="/arrow-blog.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -6vw; padding-top: 30vh;">
+        <img class="mobileHide" src="/arrow-resume.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 16vw; padding-top: 32vh;">
       </div>
       <div id='blog'>
         <a href='#'><h1>blog</h1></a>
