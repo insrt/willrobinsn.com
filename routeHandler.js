@@ -11,8 +11,8 @@ router.get('/blog', (req, res) => {
   res.render('blog')
 })
 
-router.post('/blog', blog.create)
-router.get('/blog/:id', blog.get)
-router.put('/blog/:id', blog.update)
-router.delete('/blog/:id', blog.delete)
+// router.post('/blog', blog.create)
+// router.get('/blog/:id', blog.get)
+// router.put('/blog/:id', blog.update)
+// router.delete('/blog/:id', bglog.delete)
 module.exports = router
