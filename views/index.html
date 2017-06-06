@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name=viewport content='width=700'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>willrobinsn</title>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -87,16 +87,16 @@
         vertical-align: middle;
 
       }
+      #profile-pic{
+        width: 100%;
+        display: block;
+      }
       h1{
         color: white;
       }
       a{
         color: white;
         text-decoration: none;
-      }
-      @media only screen
-      img{
-
       }
       </style>
       <style type="text/css">
@@ -127,14 +127,15 @@
   <body>
     <img class="mobileShow" src="/profile-pic.png" alt="profile" width="323vw" height="300vh" style="position: absolute;">
     <div class='container' id='main'>
-      <h1 id="name" style="padding-left: 39vw; font-size: 3vw; position:relative;">Will Robinson</h1>
+      <h1 id="name" style="padding-left: 39vw; font-size: 3vw; position:relative; z-index: 2;">Will Robinson</h1>
       <div id='connect'>
         <a id="connect-link" href='#'><h1>connect</h1></a>
       </div>
     <script type="text/javascript">
     $(document).ready(function(){  /// when document is loaded execute this function
       $('#connect-link').click(function(){ //when element with id 'html' is click execute function
-        $("#connect").html('<a href="/"><h1 style="font-size:400%">&larr;</h1></a>'); // replace contents of element with id 'content'
+        $("#connect").html('<a href="/"><h1 style="font-size:400%; z-index:1;">&larr;</h1></a>'); // replace contents of element with id 'content'
+        $('#connect-arrow').remove();
         $('#code').html('<a href="mailto:19wrobinson@oakridgeowls.net?Subject=Hello"><h1 style="inherit">email</h1></a>'); // replace contents of element with id 'content'
         $('#blog').html('<a href="https://www.twitter.com/willrob16"><h1 style="inherit">twitter</h1></a>"><h1 style="color: white">instagram</h1></a>');
         $('#resume').html('<a href="https://www.linkedin.com/in/will-r-a40552138/"><h1 style="inherit">linkedin</h1></a>');
@@ -147,8 +148,10 @@
       <div id='profile'>
         <img class="mobileHide" src="/arrow-name1.png" alt="arrow" width="240" height="205" style="position: absolute; padding-left: 2vw; margin-top: -29vh;">
         <img class="mobileHide" src="/white-arrow-v2.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 15vw; margin-top: -7vh;">
-        <img class="mobileHide" src="/arrow-connect1.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -5vw; margin-top: -7vh;">
-        <img class="mobileHide" src="/profile-pic.png" alt="profile" width="323vw" height="300vh" style="position: absolute;">
+        <img id="connect-arrow"class="mobileHide" src="/arrow-connect1.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -5vw; margin-top: -7vh;">
+        <div id="profile-pic">
+          <img class="mobileHide" src="/profile-pic.png" alt="profile" width="323vw" height="300vh" style="max-width: 323px;">
+        </div>
         <img class="mobileHide" src="/arrow-blog.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -6vw; padding-top: 30vh;">
         <img class="mobileHide" src="/arrow-resume.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 16vw; padding-top: 32vh;">
       </div>
