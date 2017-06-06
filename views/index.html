@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>willrobinsn</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous">
+    </script>
+    <style type="text/css">
+    body{
+      background-color: #4da6ff;
+      overflow: hidden;
+    }
+    #main{
+      margin-top: -2vh;
+    }
+    #connect{
+      z-index: 1;
+      position: relative;
+      width: 49vw;
+      height: 48vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 49vh;
+    }
+    #connect:hover{
+      background-color: #66b3ff;
+    }
+    #code{
+      z-index: 1;
+      position: relative;
+      width: 49vw;
+      height: 48vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 49vh;
+    }
+    #code:hover{
+      background-color: #66b3ff;
+    }
+    #connect, #code{
+      display: inline-block;
+    }
+    #blog{
+      z-index: 1;
+      position: relative;
+      width: 49vw;
+      height: 50vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50vh;
+    }
+    #blog:hover{
+      background-color: #66b3ff;
+    }
+    #resume{
+      z-index: 1;
+      position: relative;
+      width: 49vw;
+      height: 50vh;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 50vh;
+    }
+    #resume:hover{
+      background-color: #66b3ff;
+    }
+    #blog, #resume{
+      display: inline-block;
+    }
+    #profile{
+      z-index: 2;
+      position: absolute;
+      margin-top: -15vh;
+      margin-left: 39vw;
+      width: 340;
+      length: 320;
+    }
+    h1{
+      color: white;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 style="padding-left: 40vw; font-size: 3.5em;">Will Robinson</h1>
+    <div class='container' id='main'>
+      <div id='connect'>
+        <a id="connect-link" href='#'><h1>connect</h1></a>
+      </div>
+    <script type="text/javascript">
+    $(document).ready(function(){  /// when document is loaded execute this function
+      $('#connect-link').click(function(){ //when element with id 'html' is click execute function
+        $("#connect").html('<a href="mailto:19wrobinson@oakridgeowls.net?Subject=Hello"><h1 style="inherit">email</h1></a>'); // replace contents of element with id 'content'
+        $('#code').html('<a href="https://www.twitter.com/willrob16"><h1 style="inherit">twitter</h1></a>'); // replace contents of element with id 'content'
+        $('#blog').html('<a href="https://www.instagram.com/will.robinsn"><h1 style="color: white">instagram</h1></a>');
+        $('#resume').html('<a href="https://www.linkedin.com/in/will-r-a40552138/"><h1 style="inherit">linkedin</h1></a>');
+      });
+    });
+    </script>
+      <div id='code'>
+        <a href='https://github.com/insrt'><h1>code</h1></a>
+      </div>
+      <div id='profile'>
+        <img src="/arrow-name1.png" alt="arrow" width="240" height="205" style="position: absolute; padding-left: 2vw; margin-top: -27vh;">
+        <img src="/white-arrow-v2.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 15vw; margin-top: -7vh;">
+        <img src="/arrow-connect1.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -5vw; margin-top: -7vh;">
+        <img src="/profile-pic.png" alt="profile" width="323" height="300">
+        <img src="/arrow-blog.png" alt="arrow" width="135" height="100" style="position: absolute; margin-left: -6vw;">
+        <img src="/arrow-resume.png" alt="arrow" width="135" height="100" style="position: absolute; padding-left: 16vw;">
+      </div>
+      <div id='blog'>
+        <a href='#'><h1>blog</h1></a>
+      </div>
+      <div id='resume'>
+        <a href='#'><h1>resume</h1></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "willrobinsn.com",
+  "version": "1.0.0",
+  "description": "The creation of my personal website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insrt/willrobinsn.com-v2.git"
+  },
+  "author": "Will Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/insrt/willrobinsn.com-v2/issues"
+  },
+  "homepage": "https://github.com/insrt/willrobinsn.com-v2#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
