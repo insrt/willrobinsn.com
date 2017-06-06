@@ -94,6 +94,10 @@
         color: white;
         text-decoration: none;
       }
+      @media only screen
+      img{
+
+      }
       </style>
       <style type="text/css">
          .mobileHide { display: inline;}
@@ -107,7 +111,14 @@
        /* Smartphone Portrait and Landscape */
        @media only screen
        and (min-device-width : 320px)
-       and (max-device-width : 480px){ .mobileShow { display: inline;}}
+       and (max-device-width : 480px){
+          .mobileShow { display: inline;}
+          img{
+            max-width: 100%;
+            display: block;
+            height: auto;
+          }
+        }
     </style>
   </head>
   <body>
