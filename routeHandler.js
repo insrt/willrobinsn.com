@@ -1,18 +1,20 @@
 var express = require('express'),
     path = require('path'),
-    router = express.Router()
+    router = express.Router(),
     blog = require('./routes/blogController.js')
 
 router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/views/index.html'))
 })
 
-router.get('/blog', (req, res) => {
-  res.render('blog')
-})
+router.get('/blog', blog.getAll)
 
-// router.post('/blog', blog.create)
-// router.get('/blog/:id', blog.get)
-// router.put('/blog/:id', blog.update)
-// router.delete('/blog/:id', bglog.delete)
+router.get('/blog/create', (req, res) => { /*finished*/
+  res.sendFile(path.join(__dirname, '/views/newPost.html'))
+})
+router.post('/blog', blog.create) /*finished*/
+router.get('/blog/:id', blog.get)  /*finished everything except the view*/
+router.put('/blog/:id', blog.update)
+router.delete('/blog/:id', blog.delete)
+
 module.exports = router
