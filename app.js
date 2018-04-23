@@ -2,9 +2,10 @@ var express = require('express'),
 //     db = require('./config/db'),
     http = require('http'),
     path = require('path'),
+    bodyParser = require('body-parser'),
     port = Number(process.env.PORT || 8888),
-    router = require('./routeHandler'),
-    bodyParser = require('body-parser')
+    router = require('./routeHandler')
+    
 
 var app = express()
 
