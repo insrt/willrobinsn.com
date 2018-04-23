@@ -1,4 +1,5 @@
 var express = require('express'),
+    db = require('./config/db'),
     http = require('http'),
     path = require('path'),
     port = Number(process.env.PORT || 8888),
